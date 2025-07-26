@@ -1,4 +1,4 @@
-# 📄 Advanced PDF Manipulation Tool
+# 📄 PDF Manipulation Tool
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
 [![Tkinter GUI](https://img.shields.io/badge/Tkinter-GUI-green)](https://docs.python.org/3/library/tkinter.html)
@@ -72,7 +72,7 @@ To run the application, simply execute the Python script:
 
 ```bash
 python App.py
-
+```
 ## 🛡️ License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
