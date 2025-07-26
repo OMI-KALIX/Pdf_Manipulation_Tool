@@ -72,3 +72,22 @@ To run the application, simply execute the Python script:
 
 ```bash
 python App.py
+
+## 🛡️ License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+📄 This project is licensed under the MIT License.  
+✅ You are free to:
+- Use
+- Modify
+- Share 
+*(with attribution)*
+---
+## 👤 Author
+**OMI-KALIX**  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://github.com/OMI-KALIX)
+
+Made with 💙 by OMI-KALIX  
+> For collaboration or deployment inquiries - contact via GitHub!
+---
+
