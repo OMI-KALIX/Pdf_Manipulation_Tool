@@ -1,0 +1,10 @@
+PyPDF2
+pdfplumber
+pytesseract
+opencv-python
+pandas
+tabulate
+pdf2image
+reportlab
+Pillow
+PyMuPDF
