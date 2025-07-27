@@ -15,6 +15,12 @@ from reportlab.pdfgen import canvas
 from PIL import Image, ImageTk
 import fitz  # PyMuPDF
 
+"""
+Advanced PDF Manipulation Tool (Tkinter + PyPDF2 + OCR)
+Features: extract text/images/tables, merge/split PDFs, encrypt/decrypt, OCR support.
+Ideal for quick GUI-based PDF editing workflows.
+"""
+
 # Set the path to the Tesseract executable (Windows-specific)
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
@@ -69,7 +75,8 @@ def extract_text():
             text = page.extract_text()
             if text:
                 extracted_text.append(text)
-        
+        if not extracted_text:
+            messagebox.showinfo("No Text Found", "No text detected via OCR.")
         result = "\n".join(extracted_text) if extracted_text else "No text found in the PDF."
         output = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text Files", "*.txt")])
         if output:
@@ -305,7 +312,7 @@ def encrypt_pdf():
             return
 
         # Encrypt the PDF with the password
-        pdf_writer.encrypt(user_password=password)
+        pdf_writer.encrypt(password)
 
         # Save the encrypted PDF
         output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF Files", "*.pdf")], title="Save Encrypted PDF")
@@ -360,4 +367,6 @@ for i, (text, cmd) in enumerate(buttons):
     btn.grid(row=i, column=0, pady=10, padx=10)
 
 # Start the main event loop
-root.mainloop()
+if __name__ == "__main__":
+    root.mainloop()
+
